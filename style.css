@@ -224,6 +224,7 @@ html {
 
 body {
   background-color: rgb(184, 139, 42);
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
@@ -321,14 +322,22 @@ input[type="radio"] {
 .radio-toolbar label {
   background-color: rgb(7, 7, 7);
   color: rgb(184, 139, 42);
-  padding: 10px 20px;
+  padding: 10px 30px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   border: 2px solid rgb(7, 7, 7);
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
+  border-radius: 40px;
   align-items: center;
+  width: 150px;
+  text-align: center;
+}
+
+.radio-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 100px;
+  padding-left: 100px;
 }
 
 .radio-toolbar input[type="radio"]:checked + label {
@@ -342,6 +351,73 @@ input[type="radio"] {
   color: rgb(7, 7, 7);
 }
 
-.radio-toolbar input[type="radio"]:focus + label {
+.radio-toolbar input[type="radio"]:checked + label {
   border: 2px dotted rgb(7, 7, 7);
+}
+
+.lowerButtons {
+  display: flex;
+
+  align-items: center;
+}
+
+.lowerButtons :hover {
+  background-color: rgb(184, 139, 42);
+  color: rgb(7, 7, 7);
+}
+
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+
+  max-width: 900px;
+
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.swal-title {
+  color: rgb(184, 139, 42);
+}
+
+.swal-text {
+  color: rgb(184, 139, 42);
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+.swal-button {
+  color: rgb(7, 7, 7);
+  background-color: rgb(184, 139, 42);
+  font-family: "Roboto", sans-serif;
+  display: table;
+  margin: 0 auto;
+  border: 2px solid rgb(7, 7, 7);
+}
+
+.swal-button:focus {
+  border: 2px dotted rgb(184, 139, 42);
+  box-shadow: none;
+}
+
+.swal-button:not([disabled]):hover {
+  background-color: rgb(7, 7, 7);
+  color: rgb(184, 139, 42);
+}
+
+.swal-button-container {
+  left: -50%;
+  transform: translateX(50%);
+  margin-bottom: 10px;
+}
+
+.swal-modal {
+  background-color: rgb(7, 7, 7);
+}
+
+input {
+  color: rgb(184, 139, 42);
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(7, 7, 7);
+  border: 2px solid rgb(54, 54, 54);
 }
